@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="./js/main.js" defer></script>
+    <title>Preentrega 7 - DOM y eventos</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+
+    <header>
+        <h1>Gestión de inventario</h1>
+        <h2>Tienda de guitarras de Marcelo</h2>
+    </header>
+
+    <main>
+
+        <section class="seccion-busqueda">
+            <h2>Buscar guitarra por marca</h2>
+
+            <label for="busqueda">Buscar por marca</label>
+            <input type="text" id="busqueda" placeholder="Ej: Fender">
+        </section>
+
+        <section>
+            <h2>Guitarras disponibles</h2>
+
+            <div id="contenedor-guitarras" class="productos"></div>
+        </section>
+
+        <section class="seccion-formulario">
+            <h2>Agregar guitarra</h2>
+
+            <form id="form-agregar-guitarra" class="form-guitarra">
+
+                <label for="input-marca">Marca</label>
+                <input type="text" id="input-marca">
+
+                <label for="input-modelo">Modelo</label>
+                <input type="text" id="input-modelo">
+
+                <label for="input-anio">Año</label>
+                <input type="number" id="input-anio">
+
+                <label for="input-precio">Precio</label>
+                <input type="number" id="input-precio">
+
+                <label for="input-stock">Stock</label>
+                <input type="number" id="input-stock">
+
+                <button type="submit" class="card-boton">
+                    Agregar guitarra
+                </button>
+
+            </form>
+        </section>
+
+        <section>
+            <p id="mensaje"></p>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>Tienda de guitarras de Marcelo</p>
+    </footer>
+
+</body>
+
+</html>
