@@ -4,8 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="./js/main.js" defer></script>
-    <title>Preentrega 7 - Home</title>
+    <script src="./js/carrito.js" defer></script>
+    <title>Tienda de guitarras - Carrito</title>
     <link rel="stylesheet" href="./css/style.css">
 </head>
 
@@ -20,19 +20,27 @@
     </header>
 
     <main>
-        <h1>Tienda de guitarras de Marcelo</h1>
 
-        <section class="seccion-busqueda">
-            <h2>Buscar guitarras</h2>
+        <h1>Carrito de compras</h1>
 
-            <label for="busqueda">Buscar por marca o modelo</label>
-            <input type="text" id="busqueda" placeholder="Ej: Fender o Telecaster">
+        <section>
+            <h2>Productos agregados</h2>
+
+            <div id="contenedor-carrito" class="productos"></div>
         </section>
 
         <section>
-            <h2>Guitarras disponibles</h2>
+            <p id="total-carrito"></p>
+        </section>
 
-            <div id="contenedor-guitarras" class="productos"></div>
+        <section>
+            <button id="vaciar-carrito" class="card-boton">
+                Vaciar carrito
+            </button>
+        </section>
+
+        <section>
+            <p id="mensaje"></p>
         </section>
 
     </main>
