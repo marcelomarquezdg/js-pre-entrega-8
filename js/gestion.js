@@ -67,17 +67,19 @@ function imprimirGuitarrasEnHTML(lista) {
 
     lista.forEach(guitarra => {
 
+        const { id, marca, modelo, anio, precio, stock } = guitarra;
+
         const card = document.createElement("article");
 
         card.classList.add("card");
 
         card.innerHTML = `
-            <p>ID: ${guitarra.id}</p>
-            <p>Marca: ${guitarra.marca}</p>
-            <h3>Modelo: ${guitarra.modelo}</h3>
-            <p>Año de fabricación: ${guitarra.anio}</p>
-            <p>Precio: $${guitarra.precio}</p>
-            <p>Stock: ${guitarra.stock}</p>
+            <p>ID: ${id}</p>
+            <p>Marca: ${marca}</p>
+            <h3>Modelo: ${modelo}</h3>
+            <p>Año de fabricación: ${anio}</p>
+            <p>Precio: $${precio}</p>
+            <p>Stock: ${stock}</p>
 
             <button class="card-boton">
                 Eliminar guitarra
