@@ -57,6 +57,7 @@ for (let i = 0; i < inventario.length; i++) {
     }
 }
 
+
 // Mostrar guitarras en el HTML
 
 function imprimirGuitarrasEnHTML(lista) {

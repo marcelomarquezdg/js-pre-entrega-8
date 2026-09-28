@@ -1,6 +1,64 @@
+//Inventario inicial
+const inventarioInicial = [
+    {
+        marca: "Fender",
+        modelo: "Stratocaster",
+        anio: 1996,
+        precio: 700,
+        id: 102,
+        stock: 20
+    },
+    {
+        marca: "Gibson",
+        modelo: "Les Paul",
+        anio: 1960,
+        precio: 1200,
+        id: 103,
+        stock: 14
+    },
+    {
+        marca: "Ibanez",
+        modelo: "AR Standard",
+        anio: 2001,
+        precio: 650,
+        id: 104,
+        stock: 0
+    },
+    {
+        marca: "PRS",
+        modelo: "Custom 24",
+        anio: 2018,
+        precio: 1500,
+        id: 105,
+        stock: 0
+    },
+    {
+        marca: "Epiphone",
+        modelo: "Casino",
+        anio: 1965,
+        precio: 850,
+        id: 106,
+        stock: 12
+    },
+    {
+        marca: "Fender",
+        modelo: "Telecaster",
+        anio: 2010,
+        precio: 900,
+        id: 107,
+        stock: 8
+    }
+];
+
 // Recuperar inventario desde localStorage
 
-const inventario = JSON.parse(localStorage.getItem("inventario")) ?? [];
+const inventarioGuardado = JSON.parse(localStorage.getItem("inventario"));
+
+const inventario = inventarioGuardado ?? inventarioInicial;
+
+if (inventarioGuardado === null) {
+    localStorage.setItem("inventario", JSON.stringify(inventarioInicial));
+}
 
 //Guitarras disponibles
 
